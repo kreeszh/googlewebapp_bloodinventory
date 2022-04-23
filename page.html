@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  </head>
+  <body>
+    
+    <div class="container">
+
+      <div>
+      <h1>Blood Product Inventory Log</h1>
+      </div>
+
+    </div> <!-- close container -->
+        
+    <div class="container">
+      <div class="row">
+        <div class="input-field col s3">
+          <input id="ON" type="text" class="validate" required pattern="^\d{1,2}$">
+          <label for="ON">O Neg RBCs</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="BN" type="text" class="validate" required pattern="^\d{1,2}$">
+          <label for="BN">B Neg RBCs</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="AN" type="text" class="validate" required pattern="^\d{1,2}$">
+          <label for="AN">A Neg RBCs</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ABN" type="text" class="validate" required pattern="^\d{1,2}$">
+          <label for="ABN">AB Neg RBCs</label>
+        </div>
+      </div> <!-- close row -->
+
+      <div class="row">
+        <div class="input-field col s3">
+          <input id="OP" type="text" class="validate" required pattern="^\d{1,2}$">
+          <label for="OP">O Pos RBCs</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="AP" type="text" class="validate" required pattern="^\d{1,2}$">
+          <label for="AP">A Pos RBCs</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="BP" type="text" class="validate" required pattern="^\d{1,2}$">
+          <label for="BP">B Pos RBCs</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ABP" type="text" class="validate" required pattern="^\d{1,2}$">
+          <label for="ABP">AB Pos RBCs</label>
+        </div>
+      </div> <!-- close row -->
+
+      <div class="row">
+        
+      </div> <!-- close row -->
+
+      <div class="row">
+        <div class="input-field col s3">
+          <input id="OPlasma" type="text" class="validate" pattern="^\d{1,2}$">
+          <label for="OPlasma">O Plasma</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="APlasma" type="text" class="validate" pattern="^\d{1,2}$">
+          <label for="APlasma">A Plasma</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="BPlasma" type="text" class="validate" pattern="^\d{1,2}$">
+          <label for="BPlasma">B Plasma</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ABPlasma" type="text" class="validate" pattern="^\d{1,2}$">
+          <label for="ABPlasma">AB Plasma</label>
+        </div>
+      </div> <!-- close row -->
+
+      <div class="row">
+        <div class="input-field col s4">
+          <input id="Cryo" type="text" class="validate" pattern="^\d{1,2}$">
+          <label for="Cryo">Single Cryo</label>
+        </div>
+        <div class="input-field col s4">
+          <input id="PoolCryo" type="text" class="validate" pattern="^\d{1,2}$">
+          <label for="PoolCryo">Pooled Cryo</label>
+        </div>
+        <div class="input-field col s4">
+          <input id="SDP" type="text" class="validate" pattern="^\d{1,2}$">
+          <label for="SDP">Single Donor Platelet</label>
+        </div>
+      </div> <!-- close row -->
+
+      <div class ="row">
+        <button class="waves-effect waves-light btn-small red lighten-2" id="submit">
+        <i class="material-icons left">check</i>Submit</button>
+      </div> <!-- close row -->
+
+    </div> <!-- close container -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://apis.google.com/js/api.js?onload=onApiLoad"></script>
+
+    <?!= include("page-js"); ?>
+
+  </body>
+</html>
